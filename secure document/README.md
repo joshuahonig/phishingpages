@@ -35,6 +35,7 @@ Lines 14- The JavaScript that is run on button click can be modified.
 # download.html
 ---
 Line 5- Change the organization name. 
+
 Lines 14- Change the `href` to contain the URL to your document. 
 # Other notes & tips
 ---
