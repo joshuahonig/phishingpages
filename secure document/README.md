@@ -35,11 +35,14 @@ Lines 14- The JavaScript that is run on button click can be modified.
 # download.html
 ---
 Line 5- Change the organization name. 
+
 Lines 14- Change the `href` to contain the URL to your document. 
 # Other notes & tips
 ---
 favicon.ico- The website's icon, if this folder is at the web root (browsers should be able to load this at  {your site}/favicon.ico).
 
 emblem.png- The image shown on the login page. See line 24 of index.html.
+
 To make the URL more believable and lower suspicion, it may not be a bad idea to have it end with a fake document ID. For example:
+
 `https://badsite.com/?documentid=hvhB8dVRhhX1HDiUcCqD`
